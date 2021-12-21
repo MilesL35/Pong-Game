@@ -136,10 +136,9 @@ int wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PWSTR pCmdLine, int n
 
 		}
 
-		//Simulate
+		//Simulate and Render
 		simulateGame(&input, delta_time);
 
-		//Render(Output)
 		StretchDIBits(hdc, 0, 0, renderState.width, renderState.height, 0, 0, renderState.width, renderState.height, renderState.memory,
 			&renderState.bitmapInfo, DIB_RGB_COLORS, SRCCOPY);
 
